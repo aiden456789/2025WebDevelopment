@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- WD Lesson 3.1: 
+     How can we add interactions to a web page? -->
+
+<!-- Resources 
+     https://www.w3schools.com/js/default.asp
+-->
+<html>
+  <head>
+    <title>WD Lesson 3.1 Practical</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+
+
+    </style>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <!-- Challenge 0: Create a <div> and give it a class of container and center.  Inside the <div> add an <h1> with the text "Event Listener"-->
+<div class="container center">
+<h1>Event Listener</h1>
+</div>
+    <!-- Challenge 1: Give the <div> below a class of "container" -->
+    <div class="container">
+      <!-- Challenge 2: Add three images of your choice. -->
+ <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAw1BMVEX4+Pj///8WoF36+vocomH0tAAgpGT0tgYUn1z98dnzsAAjpWZfvo/1uxjwsTP1uA77twB6p0YAnV/vrTLx8fHx9fvOuDX2yFXrnQDzsQBiwJL3y1wAnVb//P/tuWPwqQHFqysAlFJ/rE8ApGq83Mo1q3BWvIrFrCzb6+LrnAD514P625L75bL+9uXWsSZ4rVRzvZWn07vQ5tpTsX+GxaJFsnuVyq3U6N6JwaJ6vaJvpETbuCrcvUjXsUf21Z7yw3P448ZjIcnJAAAEoUlEQVR4nO3dCU/bMByH4ZKQgzobHes2yBLOpisbMK5y7fz+n2p2LuzEIcVrEsn+vZuEVNRKefR33RRoRiOEEEIIIYQQQgghhBBCCCGEEEII6ZVt2xv/HX2QoY+jx9YhxtsNfTy9tFazXG7oY+q8DtAMgOsGjTX0kXVYR6OWpe3AdaqmrVvHapq6da6mpVsPajq69aGm337ay7DpN279qOk2bj0Nm27j1peaXuPW27DpNW79qWk1bmBTqcc1qtMqBZtSfapptErBphTYlAKbSvIdYevr55Y+tfR1S/rAuuwJUrZvnrddjd7kNeTI2vtmGtuZ90ZezTIX5XHLxmeGsTWgNak1sDnbZrGdv3LYGti88blRbFvey0pVIMepPM1NshvGkl1Bf7aLL4f035dDhS7MZdv+frJSO5KeJuayHZ+QPJe4Lvvy3GY1i2/nHdhIBvYymwU2ybQxNdddedp8g9kmJVs6amR1NVPZHIHNrbHV1MBWZXPram3DBjbZrIFt9CJbblVFa12jYKtPmkytymboC5AKW8sKramZzlY3W4nNN5vtJDutkqhZkUX/Nw2b4Ww1smLUosvFaLS4jBqGzVg29n5aM1t0FbN7xleRfNjAJl2hl3F21/jSl6qBTbYZRNf5sdvXUV0NbA07aDQt7juVsPlgE9USYtXZUilCLJ9TM5yNcGZWEoZhQKqLlEmROf1O4nNspp5cVdioFVOjOumWcFNsCTepVcAKczewHfO75zxVCxO2TqPbmMLF8W06bEnKFsz9ZzXT2Z5PnwKKRmdqmT69RcvZYjFbpmrWkmPzwUbZuLPOeZgtRSs/uaLlm0ASlmw+2ES2zRQnDCzupmLvnKegBGwSNvoUFoZz93nWWNkusFnspD7YGFvl3SHiWpnZzd3sfrG4n93dZHL0FMsX1MAmLkqKRq6mcZwevB3H0ysSZV4W2Aq2HZ7MTZKEsDc/Yv7ecXwXWYR9x/fBlrK9K9ksdxlkL3cXcfX+8WKe7aTLzQqbYzibtQzzFxl1Nep2n7kFwVJgcwxno2r5K9pbiRp1uy3dIrAVbBbJ1YL5THrQ9qxgC0jJxn6p0my2ZHW2xGi2PfaLuTI2+SIFW8EmTlsWY7Mlga3Glp48lbnlz+nF39sS3hEHW+3HK+K5QHNgezmwvZ4N06bAhkWqwobnNgU2bAmvZ/Nbt1ND2bzsLEFp0sC2gtmRGNjqbH5tdUYP4nu9DxHYRDbpYoweRlOuEdi8yZPsL0XFjh4/CD0eFX9Paiyb8+Njez/3hX7lN/9wjGWTf7pHtfHpbtnp6enBhP+eWWzne97q7e0KHfBsZn0yw4bTrsW5HYhxbJKH1pnt93hVs/RTeUS2can22zC2jT/8WmtN7nbwR/bIWrNt/N1/+4rei6W37f+VPrAubPj8NrXAphTYlAKbUvjcXaXAplafbEMf6xoDm1K4XoJa/bENfaRrDdeCUasvtqGPc83hOldq9cM29FGuP6gphStGqoXrk6qFq+GqhWsvK9ad2tBH1m24rrxiHcDpj8ay1ypnm4GWZa/DzjaKDCGEEEIIIYQQQgghhBBCCCGEEDKjf+y04JumZJQLAAAAAElFTkSuQmCC">
+ <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEX/////wQf/oAD/7LP/vgD/wgD/7Lb/yE7/vQD/6a7/yFH//fP/+ef/xy7/993/xSb/zEb/+OL/5qf/mwD/3af/8MH/1nL/1GX/qAL/7rv//vn/78X/yjf/89T/++7/45r/0Vn/35T/2Yf/56P/2n7/4qn/8s3/z1P/13//02P/45hyWtS4AAAD9klEQVR4nO3di1baQBDG8axsMBSFSBvlkgQvFErf/wELWhERZBJmZ3b3fP8XmPNzluDhEpIEIYQQQgghhMSbDubrH666vtfmJcloZa1JnZXPprq+YmhT4zCbF11V4pNT3puwM1Ekzq1j4KtQkTjKXAPfhJ1JXwc4GLo+o+9CLeKD8zO6E+oc1EoAuBOqEJ8FgB9ChYM6Ld0/CveF8lus3V9IPwvFiZW4UPqgFvJC4S12JS6lB0JZoopQ9KDqCCW3qCQUJGoJ5Q6qmlCMqCeUOqiKQiGiplCGqCoUIeoKJYjKQoErqrbQ/RbVhc6J+kLXB9UDoeMt+iB0S/RC6PSg+iF0uUVPhA6JvgjdEb0ROiP6I3RF9EjoiOiT0M2ThlfCjouPM/gldHFQPRM6OKi+Cfm36J2QneifkPugygm71DoF6xZlhCbvvDRoxEkUEprxVYN+/gpQ2IgYptA2IIYpbLLFUIV0YrBC8kENVkjeYsBCIjFkIe2ghiykbTFsIYUYuJBADF14/rEYuvD8FsMXniNGIDxzUCMQntliFMJviXEIvzuocQi/22IswtPEaIQnD2o0wpNbjEh4ghiT8PhBjUl4fItxCY8RIxMeIcYm/EqMTviFGJ/wkBih8OBJI0LhwRajFH4ixincP6hxCve3GKvwgxitcEeMV/hOjFj4nxiz8O2Kqia0mW1fRhw0VhOmdrjoLQdtW/YWxDumjdV2uKgvHFUvaIPGKsLUFAzDZiltixpCW7FMqwyJeKUgfGIaR7v5Xfabadw2mrC89DH4Xr+kjLM9pnHbSMKMa4WbJVLuaZSJC82Mbd6SMk5BOGCbd0e5h6G4MB3esM27uYUQwqZBCGHTIISweRAeCOu7du3+c/de+NDupZrsMRjhfbuX5uwDhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEIoL438ffzZq1+4juN4LLw5CCJsHIYRNgxDC5kH42vCObd6Nl9+ZMemSbV5F+QKivDAbsc3refrdtRXbD048kv6i8kLbZRpXUKZpCNOU52pak4AaQmNzju/J1ivaNA2hseXk4llFSRymItyusTuo+22rB5OVpc5SEm6MpszbVg4bDFITboztazJGUSgUhBBCqB+EEEKoH4QQQqgfhBBCqB+rsKC8Bi1dxvXy7LbKSyHf+yRJUnsp5Hs3L0mmJelulKKlt6w/Pf6s7TnSH05gUvl3MWV9GG5a+0a0j7xA6n1hxUoNz/1u9xr5dTnNXriBSfLkEzF75gduiN4c1NQ4ASbJxNDuJu641JrL36U81Ty3NtXNZvncmW9TfzBfX2u2/lv1XQIRQgghhBBC6Hj/ANjR1gTW/n0+AAAAAElFTkSuQmCC">
+
+
+<!-- Challenge 3: Add an event listener to each of the images above in order to display an appropriate message about the image 
+           using an alert when user clicks on the image.  
+       -->
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEX///9ChfQZZ9K3z/thmPU5f/Q/g/RNi/Tt9P5Eh/RQj/Xr8v7U4v16pvfy9v43gfOuyfr2+v8fbNcndvMtdeEAXM/L3Pvc5/hYi9wvfPPg6/mBq/hUiNuZu/kKYdFgjtzA1vujw/lunvcVad9sneyGsPhhl/VzovawzPqev/nb6P2BJIBTAAADMElEQVR4nO3d21LiQBCAYQZNcMIhIAu7WUQhruj6/g+4EVwvPJREe7ob+H8uxCqq4KsJMyQE6HSIiIiIiIiIiIiIiE6+0WB1JtNva8q79dd1EYNI+c1Pa807PRRZuX14sWHG7eX5z9srn9wmxusbd6PYX1S50AA+dTm7cjaKDTAKAsNld/bLF3FZBUlgI3RGnJeSm+hO2J1dOXou1pWobyfszvzMqI/SwJ2we+2GuJ7KbqP/hV03i0YzkaYRNtOND2KdCQNfhF5m1PMs1Rh6IaYU+lg0kgpdPBfTCj0sGomFDoiphd1r6w01ubBrvTOVXmi9aCgIjRcNDaHtKKoITWdUHaElUUlouGhoCe0WDTWh2XSjJ7QiKgqN9jQ0hTZH4FSFJouGrtDiCJyy0GDR0Bbqz6jqQnWivlB7Z8pAqLxoWAh1Fw0ToeqiYSPUnG6MhIpEK6Ee0UyotmjIC3/s2+2fyWEK9y6PF8cu7CFEiBAhQoQIESJEiBAhQoQIEYoIo0iOhXkmUelXmPcKiXp+hdn4YiTQyq0wzx5E7mCOMHUIvx3C5J20cCxyB56FZyJ3MA+5U2EolwOJxm7HsHkEpUiehTI5FqYOIUKECBEiROhCmPZwqQNhNpWo+vBlm7mwvBP5Cr6l272nvJTZPxz4FZ7APv7xH6dBuF8Ik4fw2/kVhnLdF+hi5XY9DGEzlKh2LCyP/X38EzgXI3UIESJEiBAhQg/CL7zLfWDCzfC+XcP7j0+1dCjMs/Gkbf37NqNoL2y/BzwaHpaw/fHSQxMe/xgifBtChEkSPftyclDCUC7GbVtvPj5Pz6HwK7UBHqawVQgRIkSIECFChAgRIkSIECFChAgRIkSIECFChAgRIkSIECHCV9WZFTDkxUhDOKysgDHbaAA766nVVhqrOxXho9kYhulKRdiprYhZofKTXZ3OvMxtttNK5nPGnzdZVsGCWC1UZtKn+gsLYlUr/lBnQ1TeUGOY1o96wKaH4vkDyU+f2o3by/Oft1f2uc3L1df/b6+EMot/lWaZl/rrutAaxtg7X+oO4K7RYCXylUKftxqovBwlIiIiIiIiIiIiIvLdP6TLuLFfyfN5AAAAAElFTkSuQmCC" height="200px" onclick="alert('Google Docs')"><br>
+
+       <!-- Challenges 4 - 7 are in style.css-->
+    </div>
+    <hr>
+    <div class="translations">
+      <!-- Challenge 8: Choice three words in another langauge. Place each word in a <span>.  Give each <span> a class of button
+           When the user clicks on the word in the <span> offer the English translation in an alert.   -->
+      
+
+    </div>
+  </body>
+</html>
