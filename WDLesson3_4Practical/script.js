@@ -15,11 +15,15 @@ function createStory(){
       4) Another vegetable
 
   Choose your variable names wisely.  This is a lot of practice of creating variables and using document.getElementById(..)
-  */
-
+  */ 
+    let boyname=document.getElementById("boyname").value;
+    let vegetable=document.getElementById("veg1").value;
+     let girlname=document.getElementById("girlname").value;
+    let vegatable2=document.getElementById("veg2").value;
+    
   /* Task 4: Set the innerHTML for each of the spans on lines 3 to 9 with the appropriate values from the variables you create in Task 3. */
 
   /* Task 5: Set the display property of the element with an id of "story" to 'block' */
-
+document.getElementById("story").style.display ="block";
 
 }
