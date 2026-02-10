@@ -14,3 +14,7 @@ Guideline:
 Use past examples, classwork and practicals to assist you in completing this practical.
 */
 
+function calculate(){
+    let w = parseInt(document.getElementById("weight").value);
+    let h = parseInt(document.getElementById("height").value);
+}
