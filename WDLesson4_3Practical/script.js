@@ -3,6 +3,29 @@
        2) Display BMI status as per the chart in index.html
        3) Display the corresponding image based on the BMI status.
 */
+
+function bmi(){
+    let w = parseFloat(document.getElementById("w").value);
+    let h = parseFloat(document.getElementById("h").value);
+    let output = document.getElementById("output");
+    let msg = ""
+    let filename = "";
+
+    let bmi = 703 * ( w / h ** 2);
+    if(bmi < 18.5){
+    msg = "Underweight";
+    filename = "underweight.png";
+   }else if( bmi >= 18.4 && bmi <= 24.9 ){
+   msg = "Heavy Weight";
+   filename = "healthyweight.png";
+
+}
+
+I
+output. innerHTML = 'Your BMI is ${bmi}. <img src=${filename}>' 
+
+}
+
 /* 
 Guideline:
 1) Create the function
@@ -13,8 +36,3 @@ Guideline:
 
 Use past examples, classwork and practicals to assist you in completing this practical.
 */
-
-function calculate(){
-    let w = parseInt(document.getElementById("weight").value);
-    let h = parseInt(document.getElementById("height").value);
-}
