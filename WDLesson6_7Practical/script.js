@@ -1,54 +1,72 @@
 let data;
-async function init(){
 
-let link = "collision.json"
-info = await fetch(link);
-data = await info.json();
+async function init() {
+  let link = "collision.json";
+  let info = await fetch(link);
+  data = await info.json();
 
-let output = document.getElementById("output");
-  let build = "";
-
-  for(let i = 0; i < data.length; i+=1){
-    let collision = data[i];
-     build += `<div class="fitted card">
-                 <h3>${collision.collision_type}</h3>
-                 <hr>
-                 <p>$collision.borough}</p>
-                 <p>${collision.incident_zip}</p>
-                 <p>$collision.descriptor}</p>
-                 <hr>
-                 <p>${collision.created_date}</p>
-                 <hr>
-                 <p>${collision.agency}</p>
-              </div>`    
-  }
-  output.innerHTML = build;
-}
-
-function filterByBorough(){
   let output = document.getElementById("output");
-  let borough = document.getElementById("borough").value;
   let result = document.getElementById("result");
+
   let build = "";
   let ct = 0;
 
-  for(let i = 0; i < data.length; i+=1){
-    let collision = data[i``];
-    if(collision.borough == borough){
+  for (let i = 0; i < data.length; i++) {
+    let collision = data[i];
+
+    build += `<div class="fitted card">
+                <h3>${collision.collision_type}</h3>
+                <hr>
+                <p>${collision.borough}</p>
+                <p>${collision.incident_zip}</p>
+                <p>${collision.descriptor}</p>
+                <hr>
+                <p>${collision.created_date}</p>
+                <hr>
+                <p>${collision.agency}</p>
+              </div>`;
+
+    ct++;
+  }
+
+  result.innerHTML = `${ct} Results found.`;
+  output.innerHTML = build;
+
+  let boroughs = fillDropDown("borough");
+  document.getElementById("borough").innerHTML = boroughs;
+}
+
+function filterByBorough() {
+  let borough = document.getElementById("borough").value;
+
+  let output = document.getElementById("output");
+  let result = document.getElementById("result");
+
+  let build = "";
+  let ct = 0;
+
+  for (let i = 0; i < data.length; i++) {
+    let collision = data[i];
+
+    if (collision.borough == borough || borough == "") {
       build += `<div class="fitted card">
-                    <h3>${collision.collision_type}</h3>
-                    <hr>
-                    <p>${collision.borough}</p>
-                    <p>${collision.incident_zip}</p>
-                    <p>${collision.descriptor}</p>
-                    <hr>
-                    <p>$collision.created_date}</p>
-                    <hr>
-                    <p>${collision.agency}</p>
+                  <h3>${collision.collision_type}</h3>
+                  <hr>
+                  <p>${collision.borough}</p>
+                  <p>${collision.incident_zip}</p>
+                  <p>${collision.descriptor}</p>
+                  <hr>
+                  <p>${collision.created_date}</p>
+                  <hr>
+                  <p>${collision.agency}</p>
                 </div>`;
-      ct += 1;
+
+      ct++;
     }
   }
-  result.innerHTML = `${ct} Results found.`
+
+  result.innerHTML = `${ct} Results found.`;
   output.innerHTML = build;
 }
+
+init();
