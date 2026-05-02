@@ -15,16 +15,16 @@ async function init() {
     let collision = data[i];
 
     build += `<div class="fitted card">
-                <h3>${collision.collision_type}</h3>
-                <hr>
-                <p>${collision.borough}</p>
-                <p>${collision.incident_zip}</p>
-                <p>${collision.descriptor}</p>
-                <hr>
-                <p>${collision.created_date}</p>
-                <hr>
-                <p>${collision.agency}</p>
-              </div>`;
+            <h3>${collision.borough}</h3>
+            <hr>
+            <p>${collision.zip_code}</p>
+            <p>${collision.on_street_name}</p>
+            <p>${collision.crash_date}</p>
+            <hr>
+            <p>Injured: ${collision.number_of_persons_injured}</p>
+            <hr>
+            <p>${collision.contributing_factor_vehicle_1}</p>
+          </div>`;
 
     ct++;
   }
